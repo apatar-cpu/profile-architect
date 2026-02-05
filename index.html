@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patar Aprianus | Architecture Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="about">
+        <div class="hero-content">
+            <img src="images/profile-patar.png" alt="Profile Phot" class="profile-pic">
+            <div class="hero-text">
+                <h1>Patar Aprianus</h1>
+                <p>Architect | Designer | BIM Engineer</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>Professional Summary</h2>
+        <p>
+            Architectural professional with 10+ years of experience in architecture, BIM modeling, and construction documentation across residential and commercial projects. 
+            Specialized in Revit-based BIM workflows from schematic design through construction stage. 
+            Strong background in multidisciplinary coordination, clash detection, and digital collaboration using Autodesk Construction Cloud (ACC). 
+            Known for delivering accurate construction documents and improving project coordination efficiency.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Architectural Design</li>
+            <li>Schematic Design to Construction Stage</li>
+            <li>3D Modeling (Revit, SketchUp)</li>
+            <li>BIM Coordination & Collaboration (Autodesk Construction Cloud)</li>
+            <li>Clash Detection (Navisworks)</li>
+            <li>Multi-discipline Coordination</li>
+            <li>AutoCAD Drafting</li>
+            <li>Construction Documentation</li>
+        </ul>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="experience-card" onclick="openExperience(0)">
+            <h3>Architectural Executive</h3>
+            <p>PT. AWP IDN</p>
+            <p>May 2022 - Dec 2025</p>
+        </div>
+        <div class="experience-card" onclick="openExperience(1)">
+            <h3>Building Control Officer</h3>
+            <p>PT. Belaputera Intiland</p>
+            <p>Mar 2018 - Jun 2020</p>
+        </div>
+        <div class="experience-card" onclick="openExperience(2)">
+            <h3>Architect</h3>
+            <p>PT. Inti Solid Pratama</p>
+            <p>Sept 2015 - Sept 2017</p>
+        </div>
+        <div class="experience-card" onclick="openExperience(3)">
+            <h3>Architect</h3>
+            <p>PT. Quadratura Indonesia</p>
+            <p>Nov 2010 - Feb 2015</p>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+    <h2>Projects</h2>
+
+    <!-- Tahun 2022-2025 -->
+    <div class="year-group">
+        <div class="year-header" onclick="toggleYear('2022_2025', this)">
+            <h3>2022-2025 - Selected Projects</h3>
+            <span class="arrow">▼</span>
+        </div>
+        <div id="2022_2025" class="project-list hidden">
+            <div class="project-item" onclick="toggleProject(this)">
+                <div class="project-header">
+                <h3>Data Center 1</h3>
+                <p>Jakarta, Indonesia</p>
+                <span class="arrow">▼</span>
+                </div>
+
+                <div class="project-dropdown hidden">
+                    <div class="project-slider">
+                        <button class="slide-btn prev" onclick="prevImage(event, this)"><</button>
+                        <img src="images/data-center-1.jpg" class="slide-image">
+                        <button class="slide-btn next" onclick="nextImage(event, this)">></button>
+                    </div>
+
+                    <div class="project-desc">
+                        <ul>
+                            <li>Location: Jakarta, Indonesia</li>
+                            <li>Type: Data Center Facility</li>
+                            <li>Role:</li>
+                            <li>Developed and managed BIM models in Revit from schematic design through construction documentation.</li>
+                            <li>Produced complete construction documentation set.</li>
+                            <li>Conducted clash detection in Navisworks, reducing coordination issues before construction.</li>
+                            <li>Managed model collaboration and file sharing via Autodesk Construction Cloud (ACC).</li>
+                            <li>Status: Ongoing Construction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" onclick="toggleProject(this)">
+                <div class="project-header">
+                    <h3>Data Center 2</h3>
+                    <p>Jakarta, Indonesia</p>
+                    <span class="arrow">▼</span>
+                </div>
+
+                <div class="project-dropdown hidden">
+                    <div class="project-slider">
+                        <button class="slide-btn prev" onclick="prevImage(event, this)"><</button>
+                        <img src="images/data-center-2.jpg" class="slide-image">
+                        <button class="slide-btn next" onclick="nextImage(event, this)">></button>
+                    </div>
+
+                    <div class="project-desc">
+                        <ul>
+                            <li>Location: Jakarta, Indonesia</li>
+                            <li>Type: Data Center Facility</li>
+                            <li>Role:</li>
+                            <li>Developed and managed BIM models in Revit from schematic design through construction documentation.</li>
+                            <li>Produced complete construction documentation set.</li>
+                            <li>Conducted clash detection in Navisworks, reducing coordination issues before construction.</li>
+                            <li>Managed model collaboration and file sharing via Autodesk Construction Cloud (ACC).</li>
+                            <li>Status: Completed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tahun 2015-2017 -->
+    <div class="year-group">
+        <div class="year-header" onclick="toggleYear('2015_2017', this)">
+            <h3>2015-2017 - Selected Projects</h3>
+            <span class="arrow">▼</span>
+        </div>
+        <div id="2015_2017" class="project-list hidden">
+            <div class="project-item" onclick="toggleProject(this)">
+                <div class="project-header">
+                <h3>Hotel D'Esta 88</h3>
+                <p>Bekasi, Indonesia</p>
+                <span class="arrow">▼</span>
+                </div>
+
+                <div class="project-dropdown hidden">
+                    <div class="project-slider">
+                        <button class="slide-btn prev" onclick="prevImage(event, this)"><</button>
+                        <img src="images/hotel-88.jpg" class="slide-image">
+                        <button class="slide-btn next" onclick="nextImage(event, this)">></button>
+                    </div>
+
+                    <div class="project-desc">
+                        <ul>
+                            <li>Location: Bekasi, Indonesia</li>
+                            <li>Type: Hotel</li>
+                            <li>Role:</li>
+                            <li>Producing drawing from schematic design to construction documentation.</li>
+                            <li>Coordinated with structural and MEP consultants to ensure design integration.</li>
+                            <li>Status: Completed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" onclick="toggleProject(this)">
+                <div class="project-header">
+                    <h3>Private House</h3>
+                    <p>Jakarta, Indonesia</p>
+                    <span class="arrow">▼</span>
+                </div>
+
+                <div class="project-dropdown hidden">
+                    <div class="project-slider">
+                        <button class="slide-btn prev" onclick="prevImage(event, this)"><</button>
+                        <img src="images/private-house.jpg" class="slide-image">
+                        <button class="slide-btn next" onclick="nextImage(event, this)">></button>
+                    </div>
+
+                    <div class="project-desc">
+                        <ul>
+                            <li>Location: Jakarta, Indonesia</li>
+                            <li>Type: Private House</li>
+                            <li>Role: </li>
+                            <li>Producing drawing from schematic design to construction documentation.</li>
+                            <li>Coordinated with structural and MEP consultants to ensure design integration.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tahun 2011-2014 -->
+    <div class="year-group">
+        <div class="year-header" onclick="toggleYear('2011_2014', this)">
+            <h3>2011-2014 - Selected Projects</h3>
+            <span class="arrow">▼</span>
+        </div>
+        <div id="2011_2014" class="project-list hidden">
+            <div class="project-item" onclick="toggleProject(this)">
+                <div class="project-header">
+                    <h3>Compiled Project - 2011 to 2014</h3>
+                    <p>Various Locations, Indonesia</p>
+                    <span class="arrow">▼</span>
+                </div>
+
+                <div class="project-dropdown hidden">
+                    <div class="project-slider">
+                        <button class="slide-btn prev" onclick="prevImage(event, this)"><</button>
+                        <img src="images/compiled-portfolio.jpg" class="slide-image">
+                        <button class="slide-btn next" onclick="nextImage(event, this)">></button>
+                    </div>
+
+                    <div class="project-desc">
+                        <ul>
+                            <p>Compiled design portfolio of projects from 2011 to 2014.</p>
+                            <p>Role:</p>
+                            <li>Architectural design from schematic design to construction documentation.</li>
+                            <li>Coordinated with structural and MEP consultants to ensure design integration.</li>
+                            <li>Assisted in authority submissions and approvals.</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p1>Email: aprianus.patar@gmail.com</p1>
+        <p1>phone: +62 816 4699 5637</p1>
+    </section>
+
+    <!-- MODAL Project -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content project-modal-content">
+            <span class="close" onclick="closProjectModal()">&times;</span>
+
+            <div class="slider" id="project">
+                <button class="nav prev" onclick="prevSlide()"><</button>
+                <img id="project-img">
+                <button class="nav next" onclick="nextSlide()">></button>   
+            </div>
+            <h3 id="project-title"></h3>
+            <ul id="project-desc"></ul>
+        </div>
+    </div>
+
+    <!-- MODAL Experience -->
+    <div id="experience-modal" class="modal">
+        <div class="modal-content experience-modal-content">
+            <span class="close" onclick="closeExperienceModal()">&times;</span>
+            <h3 id="experience-title"></h3>
+            <ul id="experience-desc"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
