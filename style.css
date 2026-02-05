@@ -44,6 +44,11 @@ h2 {
     margin-bottom: 20px;
 }
 
+h4 {
+    text-align: left;
+    margin-bottom: 0;
+}
+
 ul {
     list-style: none;
     padding: 0;
