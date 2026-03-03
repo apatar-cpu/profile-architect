@@ -442,10 +442,11 @@ ul li {
 }
 
 .gallery-link a {
+  font-family: 'Arial', sans-serif;  
   font-size: 15px;
   letter-spacing: 1.5px;
-  color: black;
-  text-decoration: none;
+  color: #007BFF;
+  text-decoration: underline;
   transition: color 0.2s;
 }
 
